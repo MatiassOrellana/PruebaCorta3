@@ -25,7 +25,7 @@ export class MemberListComponent implements OnInit {
     this.router.navigate(['addMember']);
   }
 
-  toEdit(): void {
-    this.router.navigate(['editMember']);
+  toEdit(id: number): void {
+    this.router.navigate(['editMember', id]);
   }
 }
