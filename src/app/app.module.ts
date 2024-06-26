@@ -9,6 +9,7 @@ import { FooterComponent } from './_components/footer/footer.component';
 import { MemberListComponent } from './_pages/member-list/member-list.component';
 import { AddMemberComponent } from './_pages/add-member/add-member.component';
 import { EditMemberComponent } from './_pages/edit-member/edit-member.component';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { EditMemberComponent } from './_pages/edit-member/edit-member.component'
     FooterComponent,
     MemberListComponent,
     AddMemberComponent,
-    EditMemberComponent,
+    EditMemberComponent
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
