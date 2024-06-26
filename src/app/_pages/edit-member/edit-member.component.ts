@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { MemberService } from 'src/app/_services/member.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class EditMemberComponent {
 
   profileForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private memberService: MemberService){
+  constructor(private fb: FormBuilder, private memberService: MemberService, private router:Router){
 
     this.profileForm = this.fb.group({
       name: ["", Validators.required],
