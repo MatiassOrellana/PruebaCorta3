@@ -10,6 +10,7 @@ import { MemberListComponent } from './_pages/member-list/member-list.component'
 import { AddMemberComponent } from './_pages/add-member/add-member.component';
 import { EditMemberComponent } from './_pages/edit-member/edit-member.component';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
     AddMemberComponent,
     EditMemberComponent
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
